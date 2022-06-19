@@ -1,0 +1,87 @@
+/* Logo */
+#logo img {
+    width: 100%;
+    margin: 1.5rem 0;
+    z-index: -1;
+}
+/* Line-start */
+.line-start {
+    text-align: center;
+    margin: 1.5rem;
+}
+/* Server introduction */
+.server-intro {
+    width: 90% auto;
+    margin: 5rem 10rem;
+
+    .intro-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .intro-left-image {
+            padding: 0.5rem;
+            border: 0.3rem solid #0DA9EF;
+        }
+
+        .intro-right-text {
+            padding: 0 0 0 5rem;
+            
+            h2 {
+                margin: 3rem 0;
+                color: #0DA9EF;
+                font-family: "MavenPro Medium", sans-serif;
+                font-size: 2.6rem;
+            }
+            p {
+                font-family: "MavenPro Regular", sans-serif;
+                font-size: 1.5rem;
+                color: white;
+                text-align: justify;
+            }
+        }
+    }
+
+    .intro-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 3rem 0;
+
+        .intro-left-text {
+            padding: 0 5rem 0 0;
+            
+            h2 {
+                margin: 3rem 0;
+                color: #0DA9EF;
+                font-family: "MavenPro Medium", sans-serif;
+                font-size: 2.6rem;
+            }
+            p {
+                font-family: "MavenPro Regular", sans-serif;
+                font-size: 1.5rem;
+                color: white;
+                text-align: justify;
+            }
+        }
+
+        .intro-right-image {
+            padding: 0.5rem;
+            border: 0.3rem solid #0DA9EF;
+        }
+    }
+}
+/* Social media */
+.social-media {
+    width: 100%;
+    text-align: center;
+
+    iframe {
+        margin: 2.5rem;
+    }
+}
+/* Line-end */
+.line-end {
+    text-align: center;
+    margin-top: 5rem;
+}

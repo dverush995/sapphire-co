@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="UA-UX-Compatible" content="ie-edge" />
+    <meta name="description" content="Sapphire Conquer is a Conquer Online Private Server that is based..." />
+    <!-- Links to CSS -->
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <!-- Title of the website -->
+    <title>Sapphire Conquer Online</title>
+  </head>
+  <body>
+    <!-- Navigation menu -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="#" class="active">Account Management</a>
+            <ul>
+              <li><a href="createAccount.html">Create an account</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </li>
+          <li><a href="./download.html">Download</a></li>
+          <li>
+            <a href="#">Informations</a>
+            <ul>
+              <li><a href="started.html">Getting started</a></li>
+              <li><a href="serverinfo.html">Server informations</a></li>
+              <li><a href="npcs.html">NPCs Explanation</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Logo -->
+    <section id="logo">
+      <img src="../images/serverlogo.png" alt="Sapphire Logo" />
+    </section>
+    <!-- Line-start -->
+    <section class="line-start-ca">
+      <img src="../images/line.png" alt="Line" />
+    </section>
+    <!-- Register form -->
+    <section class="register">
+      <h2>Fill all the required informations to create your account</h2>
+      <div class="register-form">
+        <form autocomplete="off">
+          <div class="register-inputs">
+            <label for="username">Username : </label>
+            <input type="text" name="user" id="username" placeholder="Type your username here..." required />
+          </div>
+          <div class="register-inputs">
+            <label for="password">Password : </label>
+            <input type="password" name="pass" id="password" placeholder="Type your password here..." required />
+          </div>
+          <div class="register-inputs">
+            <label for="confirmpassword">Confirm your pasword : </label>
+            <input type="password" name="confirmpass" id="confirmpassword" placeholder="Confirm your password here..." required />
+          </div>
+          <div class="register-inputs">
+            <label for="email">E-mail address : </label>
+            <input type="email" name="email" id="email" placeholder="Type your e-mail address here" required />
+          </div>
+          <div class="register-inputs">
+            <label for="confirmemail">Confirm your e-mail address :</label>
+            <input type="email" name="confirmemail" id="confirmemail" placeholder="Confirm your e-mail address here..." required />
+          </div>
+          <div class="register-inputs">
+            <label for="question">Security question : </label>
+            <select name="question" id="question" class="slc" required>
+              <option value="select" selected hidden>Select your question...</option>
+              <option value="city">What city you were born in?</option>
+              <option value="nick">What is your nickname?</option>
+              <option value="pet">What was your first pets name?</option>
+              <option value="game">What is your favorite game?</option>
+              <option value="sport">What is your favorite sport?</option>
+              <option value="food">What is your favorite food?</option>
+            </select>
+          </div>
+          <div class="register-inputs">
+            <label for="answer">Security answer : </label>
+            <input type="answer" name="answer" id="answer" placeholder="Type your answer here..." required />
+          </div>
+          <button type="submit" class="btn-register">Register</button>
+        </form>
+      </div>
+    </section>
+    <!-- Line-end -->
+    <section class="line-end-ca">
+      <img src="../images/line.png" alt="Line" />
+    </section>
+    <!-- Footer -->
+    <footer>
+      <h5>Sapphire Online is an unofficial network of servers emulating the experience of the famous multiplayer game Conquer Online.</h5>
+      <p class="left">2022, Sapphire Online</p>
+      <p class="right">&copy; All rights reserved</p>
+    </footer>
+  </body>
+</html>

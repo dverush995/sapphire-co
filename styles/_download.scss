@@ -1,0 +1,152 @@
+/* Logo */
+#logo img {
+    width: 100%;
+    margin: 1.5rem 0;
+    z-index: -1;
+}
+/* Line-start */
+.line-start-down {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+/* Download links */
+.download-links {
+    width: 100%;
+    height: 35vh;
+    margin: 5rem 0;
+
+    h2 {
+        font-family: "MavenPro Medium";
+        font-size: 2.2rem;
+        color: #0DA9EF;
+        margin-left: 8rem;
+    }
+
+    .download-boxes {
+        width: 90%;
+        height: 27vh;
+        margin: 2rem 5% 2rem 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-family: "MavenPro Medium";
+        font-size: 1.8rem;
+
+        .mega-box {
+            border: 0.2rem solid #707070;
+            margin: 1rem 3rem 0 3rem;
+            height: 27vh;
+            color: white;
+
+            h5 {
+                text-align: center;
+                padding: 2rem 0 1rem 0;
+                font-size: 2.2rem;
+            }
+
+            hr {
+                position: relative;
+                width: 90%;
+                top: 0;
+                left: 5%;
+                color: #0DA9EF;
+            }
+
+            p {
+                text-align: center;
+                padding: 1rem;
+            }
+
+            .btn-download {
+                position: relative;
+                top: 0.6rem;
+                left: 25%;
+                padding: 0.5rem 2rem;
+                font-family: "MavenPro Medium";
+                font-size: 2.2rem;
+                background: linear-gradient(90deg, #075578 0%, #0c0c0c 65%);
+                border: 0.1rem solid #707070;
+                border-radius: 2rem;
+                
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+/* Specs */
+.specs {
+    width: 100%;
+    height: 43vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    color: white;
+
+    .specs-table {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 1.8rem;
+        font-family: "MavenPro Medium";
+        width: 85%;
+        text-align: center;
+
+        .specs-main {
+            h3 {
+                padding-left: 10rem;
+            }
+        }
+        
+        h3 {
+            padding: 1rem 0;
+        }
+
+        hr {
+            position: absolute;
+            width: 85%;
+            border: 0.2rem solid #fff;
+        }
+
+        .center-text {
+            position: relative;
+            top: 0;
+            left: 90%;
+        }
+
+        .specs-right {
+                padding-right: 10rem;
+        }
+    }
+}
+/* Install instructions */
+.install {
+    margin: 7rem 5%;
+    width: 90%;
+    
+    h3 {
+        margin-bottom: 2rem;
+        font-family: "MavenPro Medium";
+        font-size: 2.2rem;
+        color: #0DA9EF;
+    }
+
+    p {
+        padding: 0.5rem 0;
+        font-family: "MavenPro Regular";
+        font-size: 1.8rem;
+        color: #fff;
+    }
+
+    img {
+        width: 20%;
+        margin: 1rem 20rem;
+    }
+}
+/* Line-end */
+.line-end-down {
+    text-align: center;
+    margin-top: -2rem;
+}

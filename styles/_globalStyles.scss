@@ -1,0 +1,156 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background: black;
+}
+/* Fonts */
+@font-face {
+    font-family: "MavenPro Regular";
+    src: url('../fonts/MavenPro-Regular.ttf');
+}
+@font-face {
+    font-family: "MavenPro Medium";
+    src: url('../fonts/MavenPro-Medium.ttf');
+}
+@font-face {
+    font-family: "MavenPro Bold";
+    src: url('../fonts/MavenPro-Bold.ttf');
+}
+/* Styles */
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+label {
+    color: white;
+    font-family: "MavenPro Regular";
+    font-size: 2rem;
+}
+input, select{
+    width: 50%;
+    height: 3.5rem;
+    margin-left: 5rem;
+    background: #262626;
+    color: white;
+    font-family: "MavenPro Regular";
+    font-size: 1.5rem;
+    text-align: center;
+    border: 0.3rem solid #707070;
+    border-radius: 5rem;
+    overflow: hidden;
+}
+::placeholder {
+    opacity: .2;
+}
+/* Navigation menu */
+nav {
+    margin: 1rem 0;
+    width: 100%;
+
+    .active {
+        color: #0DA9EF;
+        border-bottom: 0.2rem solid #fff;
+        padding: 1rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 120rem;
+
+        li {
+            position: relative;
+            padding: 1rem 1rem;
+
+            a {
+                padding: 0 2rem;
+                font-family: "MavenPro Bold", sans-serif;
+                font-size: 2rem;
+                font-variant: small-caps;
+                color: #fff;
+            }
+
+            a:hover {
+                color: #0DA9EF;
+            }
+
+            ul {
+                position: absolute;
+                top: 4rem;
+                left: 0;
+                display: block;
+                width: 25rem;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        li:hover {
+            cursor: pointer;
+        }
+        li:hover ul li {
+            text-align: center;
+            padding: 1.5rem auto;
+            height: 3.5rem;
+        }
+        ul li a {
+            font-family: "MavenPro Bold", sans-serif;
+            font-size: 1.8rem;
+        }
+        li:hover ul {
+            opacity: 1;
+            visibility: visible;
+            border: 3px solid #0DA9EF;
+            border-radius: 1.5rem;
+            z-index: 1;
+            background: #000;
+        }
+    }
+}
+/* Footer */
+footer {
+    width: 90%;
+    color: white;
+    margin-top: 2rem;
+
+    h5 {
+        text-align: center;
+        font-family: "MavenPro Regular", sans-serif;
+        font-size: 1.5rem;
+        color: white;
+        padding: 2rem 0;
+        border-bottom: 0.3rem solid #fff;
+        width: 90%;
+        position: relative;
+        top: 0;
+        left: 10%;
+    }
+
+    p {
+        display: inline-block;
+        padding: 2rem 5rem;
+        font-family: "MavenPro Regular", sans-serif;
+        font-size: 1.4rem;
+    }
+
+    .left {
+        position: relative;
+        top: 0;
+        left: 14%;
+    }
+    .right {
+        position: relative;
+        top: 0;
+        left: 55%;
+    }
+}

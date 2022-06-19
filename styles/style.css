@@ -1,0 +1,1075 @@
+@charset "UTF-8";
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: black;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "MavenPro Regular";
+  src: url("../fonts/MavenPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MavenPro Medium";
+  src: url("../fonts/MavenPro-Medium.ttf");
+}
+
+@font-face {
+  font-family: "MavenPro Bold";
+  src: url("../fonts/MavenPro-Bold.ttf");
+}
+
+/* Styles */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  color: white;
+  font-family: "MavenPro Regular";
+  font-size: 2rem;
+}
+
+input,
+select {
+  width: 50%;
+  height: 3.5rem;
+  margin-left: 5rem;
+  background: #262626;
+  color: white;
+  font-family: "MavenPro Regular";
+  font-size: 1.5rem;
+  text-align: center;
+  border: 0.3rem solid #707070;
+  border-radius: 5rem;
+  overflow: hidden;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.2;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.2;
+}
+
+::-ms-input-placeholder {
+  opacity: 0.2;
+}
+
+::placeholder {
+  opacity: 0.2;
+}
+
+/* Navigation menu */
+nav {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+nav .active {
+  color: #0da9ef;
+  border-bottom: 0.2rem solid #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+nav ul li {
+  position: relative;
+  padding: 1rem 1rem;
+}
+
+nav ul li a {
+  padding: 0 2rem;
+  font-family: "MavenPro Bold", sans-serif;
+  font-size: 2rem;
+  font-variant: small-caps;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  color: #0da9ef;
+}
+
+nav ul li ul {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  display: block;
+  width: 25rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+nav ul li:hover ul li {
+  text-align: center;
+  padding: 1.5rem auto;
+  height: 3.5rem;
+}
+
+nav ul ul li a {
+  font-family: "MavenPro Bold", sans-serif;
+  font-size: 1.8rem;
+}
+
+nav ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  border: 3px solid #0da9ef;
+  border-radius: 1.5rem;
+  z-index: 1;
+  background: #000;
+}
+
+/* Footer */
+footer {
+  width: 90%;
+  color: white;
+  margin-top: 2rem;
+}
+
+footer h5 {
+  text-align: center;
+  font-family: "MavenPro Regular", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  padding: 2rem 0;
+  border-bottom: 0.3rem solid #fff;
+  width: 90%;
+  position: relative;
+  top: 0;
+  left: 10%;
+}
+
+footer p {
+  display: inline-block;
+  padding: 2rem 5rem;
+  font-family: "MavenPro Regular", sans-serif;
+  font-size: 1.4rem;
+}
+
+footer .left {
+  position: relative;
+  top: 0;
+  left: 14%;
+}
+
+footer .right {
+  position: relative;
+  top: 0;
+  left: 55%;
+}
+
+/* Logo */
+#logo img {
+  width: 100%;
+  margin: 1.5rem 0;
+  z-index: -1;
+}
+
+/* Line-start */
+.line-start {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+/* Server introduction */
+.server-intro {
+  width: 90% auto;
+  margin: 5rem 10rem;
+}
+
+.server-intro .intro-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.server-intro .intro-left .intro-left-image {
+  padding: 0.5rem;
+  border: 0.3rem solid #0da9ef;
+}
+
+.server-intro .intro-left .intro-right-text {
+  padding: 0 0 0 5rem;
+}
+
+.server-intro .intro-left .intro-right-text h2 {
+  margin: 3rem 0;
+  color: #0da9ef;
+  font-family: "MavenPro Medium", sans-serif;
+  font-size: 2.6rem;
+}
+
+.server-intro .intro-left .intro-right-text p {
+  font-family: "MavenPro Regular", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: justify;
+}
+
+.server-intro .intro-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 3rem 0;
+}
+
+.server-intro .intro-right .intro-left-text {
+  padding: 0 5rem 0 0;
+}
+
+.server-intro .intro-right .intro-left-text h2 {
+  margin: 3rem 0;
+  color: #0da9ef;
+  font-family: "MavenPro Medium", sans-serif;
+  font-size: 2.6rem;
+}
+
+.server-intro .intro-right .intro-left-text p {
+  font-family: "MavenPro Regular", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: justify;
+}
+
+.server-intro .intro-right .intro-right-image {
+  padding: 0.5rem;
+  border: 0.3rem solid #0da9ef;
+}
+
+/* Social media */
+.social-media {
+  width: 100%;
+  text-align: center;
+}
+
+.social-media iframe {
+  margin: 2.5rem;
+}
+
+/* Line-end */
+.line-end {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* Logo */
+#logo img {
+  width: 100%;
+  margin: 1.5rem 0;
+  z-index: -1;
+}
+
+/* Line-start */
+.line-start-ca {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Register form */
+.register {
+  width: 100%;
+  min-height: 10vh;
+  margin: 5rem 0;
+  overflow: hidden;
+}
+
+.register h2 {
+  font-family: "MavenPro Medium";
+  font-size: 2.2rem;
+  color: #0da9ef;
+  text-align: center;
+}
+
+.register .register-form {
+  width: 100%;
+  margin: 7rem 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.register .register-form .register-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  width: 100vh;
+}
+
+.register .register-form .register-inputs .slc {
+  color: #707070;
+  overflow: hidden;
+}
+
+.register .register-form .btn-register {
+  position: relative;
+  top: 0;
+  left: 58%;
+  width: 25rem;
+  height: 5rem;
+  border: 0.2rem solid #707070;
+  border-radius: 5rem;
+  font-family: "MavenPro Medium";
+  font-size: 2.1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#075578), color-stop(65%, #0c0c0c));
+  background: linear-gradient(90deg, #075578 0%, #0c0c0c 65%);
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Line-end */
+.line-end-ca {
+  text-align: center;
+  margin-top: -5rem;
+}
+
+/* Logo */
+#logo img {
+  width: 100%;
+  margin: 1.5rem 0;
+  z-index: -1;
+}
+
+/* Line-start */
+.line-start-lo {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+/* Register form */
+.register {
+  width: 100%;
+  min-height: 10vh;
+  margin: 4rem 0;
+  overflow: hidden;
+}
+
+.register h2 {
+  font-family: "MavenPro Medium";
+  font-size: 2.2rem;
+  color: #0da9ef;
+  text-align: center;
+}
+
+.register .register-form {
+  width: 100%;
+  margin: 7rem 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.register .register-form .register-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  width: 100vh;
+}
+
+.register .register-form .register-inputs .slc {
+  color: #707070;
+  overflow: hidden;
+}
+
+.register .register-form .btn-register {
+  position: relative;
+  top: 0;
+  left: 58%;
+  width: 25rem;
+  height: 5rem;
+  border: 0.2rem solid #707070;
+  border-radius: 5rem;
+  font-family: "MavenPro Medium";
+  font-size: 2.1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#075578), color-stop(65%, #0c0c0c));
+  background: linear-gradient(90deg, #075578 0%, #0c0c0c 65%);
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Line-end */
+.line-end-lo {
+  text-align: center;
+  margin-top: -5rem;
+}
+
+/* Logo */
+#logo img {
+  width: 100%;
+  margin: 1.5rem 0;
+  z-index: -1;
+}
+
+/* Line-start */
+.line-start-down {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Download links */
+.download-links {
+  width: 100%;
+  height: 35vh;
+  margin: 5rem 0;
+}
+
+.download-links h2 {
+  font-family: "MavenPro Medium";
+  font-size: 2.2rem;
+  color: #0da9ef;
+  margin-left: 8rem;
+}
+
+.download-links .download-boxes {
+  width: 90%;
+  height: 27vh;
+  margin: 2rem 5% 2rem 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-family: "MavenPro Medium";
+  font-size: 1.8rem;
+}
+
+.download-links .download-boxes .mega-box {
+  border: 0.2rem solid #707070;
+  margin: 1rem 3rem 0 3rem;
+  height: 27vh;
+  color: white;
+}
+
+.download-links .download-boxes .mega-box h5 {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-size: 2.2rem;
+}
+
+.download-links .download-boxes .mega-box hr {
+  position: relative;
+  width: 90%;
+  top: 0;
+  left: 5%;
+  color: #0da9ef;
+}
+
+.download-links .download-boxes .mega-box p {
+  text-align: center;
+  padding: 1rem;
+}
+
+.download-links .download-boxes .mega-box .btn-download {
+  position: relative;
+  top: 0.6rem;
+  left: 25%;
+  padding: 0.5rem 2rem;
+  font-family: "MavenPro Medium";
+  font-size: 2.2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#075578), color-stop(65%, #0c0c0c));
+  background: linear-gradient(90deg, #075578 0%, #0c0c0c 65%);
+  border: 0.1rem solid #707070;
+  border-radius: 2rem;
+}
+
+.download-links .download-boxes .mega-box .btn-download a {
+  color: white;
+}
+
+/* Specs */
+.specs {
+  width: 100%;
+  height: 43vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: center;
+  color: white;
+}
+
+.specs .specs-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-size: 1.8rem;
+  font-family: "MavenPro Medium";
+  width: 85%;
+  text-align: center;
+}
+
+.specs .specs-table .specs-main h3 {
+  padding-left: 10rem;
+}
+
+.specs .specs-table h3 {
+  padding: 1rem 0;
+}
+
+.specs .specs-table hr {
+  position: absolute;
+  width: 85%;
+  border: 0.2rem solid #fff;
+}
+
+.specs .specs-table .center-text {
+  position: relative;
+  top: 0;
+  left: 90%;
+}
+
+.specs .specs-table .specs-right {
+  padding-right: 10rem;
+}
+
+/* Install instructions */
+.install {
+  margin: 7rem 5%;
+  width: 90%;
+}
+
+.install h3 {
+  margin-bottom: 2rem;
+  font-family: "MavenPro Medium";
+  font-size: 2.2rem;
+  color: #0da9ef;
+}
+
+.install p {
+  padding: 0.5rem 0;
+  font-family: "MavenPro Regular";
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.install img {
+  width: 20%;
+  margin: 1rem 20rem;
+}
+
+/* Line-end */
+.line-end-down {
+  text-align: center;
+  margin-top: -2rem;
+}
+
+/* Logo */
+#logo img {
+  width: 100%;
+  margin: 1.5rem 0;
+  z-index: -1;
+}
+
+/* Line-start */
+.line-start-getstarted {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Getting started */
+.getstarted {
+  width: 90%;
+  margin: 5rem 5%;
+}
+
+.getstarted .getstarted-info {
+  margin: 3.5rem 0;
+}
+
+.getstarted .getstarted-info h3 {
+  font-family: "MavenPro Medium";
+  font-size: 2.2rem;
+  color: #0da9ef;
+}
+
+.getstarted .getstarted-info p {
+  font-family: "MavenPro Regular";
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+/* Line-end */
+.line-end-getstarted {
+  text-align: center;
+}
+
+/* Logo */
+#logo img {
+  width: 100%;
+  margin: 1.5rem 0;
+  z-index: -1;
+}
+
+/* Line-start */
+.line-start-getstarted {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Server informations */
+.server-info {
+  width: 90%;
+  margin: 5rem 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.server-info .special-server {
+  width: 50%;
+}
+
+.server-info .special-server h3 {
+  font-family: "MavenPro Medium";
+  font-size: 2.2rem;
+  color: #0da9ef;
+}
+
+.server-info .special-server ul {
+  font-family: "MavenPro Regular";
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.server-info .special-server ul li {
+  list-style: disc;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.server-info .special-client {
+  width: 40%;
+}
+
+.server-info .special-client h3 {
+  font-family: "MavenPro Medium";
+  font-size: 2.2rem;
+  color: #0da9ef;
+}
+
+.server-info .special-client ul {
+  font-family: "MavenPro Regular";
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.server-info .special-client ul li {
+  list-style: disc;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+/* Line-end */
+.line-end-getstarted {
+  text-align: center;
+}
+
+/* Logo */
+#logo img {
+  width: 100%;
+  margin: 1.5rem 0;
+  z-index: -1;
+}
+
+/* Line-start */
+.line-start-npcs {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* NPCs */
+.npcs {
+  width: 90%;
+  margin: 3rem 5%;
+  color: #fff;
+  overflow: hidden;
+}
+
+.npcs h2 {
+  font-family: "MavenPro Medium";
+  font-size: 2.2rem;
+  color: #0da9ef;
+  text-align: center;
+}
+
+.npcs .npc-explain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+}
+
+.npcs .npc-explain .npc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+}
+
+.npcs .npc-explain .npc .npc-info {
+  padding: 0 3rem;
+}
+
+.npcs .npc-explain .npc .npc-info h4 {
+  font-family: "MavenPro Medium";
+  font-size: 1.8rem;
+  color: #0da9ef;
+}
+
+.npcs .npc-explain .npc .npc-info .main-p {
+  font-family: "MavenPro Regular";
+  font-size: 1.6rem;
+  text-align: justify;
+  padding: 2rem 0;
+}
+
+.npcs .npc-explain .npc .npc-info .green-text {
+  font-family: "MavenPro Medium";
+  font-size: 1.6rem;
+  text-align: justify;
+  color: #2ece2e;
+  padding: 0.5rem 0;
+}
+
+/* Line-end */
+.line-end-npcs {
+  margin-top: -5rem;
+  text-align: center;
+}
+
+/* Logo */
+#logo img {
+  width: 100%;
+  margin: 1.5rem 0;
+  z-index: -1;
+}
+
+/* Line-start */
+.line-start-quests {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Quests */
+.info-updates h2 {
+  font-family: "MavenPro Medium";
+  font-size: 2.2rem;
+  color: #0da9ef;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.quests {
+  width: 90%;
+  margin: 3rem 5%;
+}
+
+.quests .quest-info {
+  display: none;
+}
+
+.quests:hover {
+  border: 0.5rem solid #0da9ef;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-collapse: collapse;
+}
+
+.quests:hover .quest-info {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 5rem;
+  display: inline-block;
+}
+
+.quests:hover .quest-info .quest-info-start h5 {
+  font-family: "MavenPro Medium";
+  font-size: 1.8rem;
+  color: #0da9ef;
+  padding: 1rem 0;
+}
+
+.quests:hover .quest-info .quest-info-start p {
+  font-family: "MavenPro Regular";
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.quests:hover .quest-info .quest-info-start ul {
+  padding: 0 1rem;
+  color: #fff;
+}
+
+.quests:hover .quest-info .quest-info-start ul li {
+  font-family: "MavenPro Regular";
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+}
+
+.quests:hover .quest-info .quest-info-start ul li::before {
+  content: "—";
+  left: 8.2%;
+  position: absolute;
+}
+
+.quests:hover .quest-info .quest-info-part1 ul,
+.quests:hover .quest-info .quest-info-part2 ul,
+.quests:hover .quest-info .quest-info-part3 ul,
+.quests:hover .quest-info .quest-info-part4 ul {
+  padding: 0 1rem;
+  color: #fff;
+}
+
+.quests:hover .quest-info .quest-info-part1 ul li,
+.quests:hover .quest-info .quest-info-part2 ul li,
+.quests:hover .quest-info .quest-info-part3 ul li,
+.quests:hover .quest-info .quest-info-part4 ul li {
+  font-family: "MavenPro Regular";
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+}
+
+.quests:hover .quest-info .quest-info-part1 ul li::before,
+.quests:hover .quest-info .quest-info-part2 ul li::before,
+.quests:hover .quest-info .quest-info-part3 ul li::before,
+.quests:hover .quest-info .quest-info-part4 ul li::before {
+  content: "—";
+  left: 8.2%;
+  position: absolute;
+}
+
+.quests:hover .quest-info .quest-info-part1 .img-part-1,
+.quests:hover .quest-info .quest-info-part1 .img-part-2,
+.quests:hover .quest-info .quest-info-part1 .img-part-3,
+.quests:hover .quest-info .quest-info-part1 .img-part-4,
+.quests:hover .quest-info .quest-info-part2 .img-part-1,
+.quests:hover .quest-info .quest-info-part2 .img-part-2,
+.quests:hover .quest-info .quest-info-part2 .img-part-3,
+.quests:hover .quest-info .quest-info-part2 .img-part-4,
+.quests:hover .quest-info .quest-info-part3 .img-part-1,
+.quests:hover .quest-info .quest-info-part3 .img-part-2,
+.quests:hover .quest-info .quest-info-part3 .img-part-3,
+.quests:hover .quest-info .quest-info-part3 .img-part-4,
+.quests:hover .quest-info .quest-info-part4 .img-part-1,
+.quests:hover .quest-info .quest-info-part4 .img-part-2,
+.quests:hover .quest-info .quest-info-part4 .img-part-3,
+.quests:hover .quest-info .quest-info-part4 .img-part-4 {
+  width: 15rem;
+  height: 5rem;
+  position: relative;
+  top: 0;
+  left: 45%;
+  margin: 3rem 0;
+}
+
+.quests:hover .quest-info .quest-info-part1 .quest-info-part2-info,
+.quests:hover .quest-info .quest-info-part1 .quest-info-part3-info,
+.quests:hover .quest-info .quest-info-part1 .quest-info-part4-info,
+.quests:hover .quest-info .quest-info-part2 .quest-info-part2-info,
+.quests:hover .quest-info .quest-info-part2 .quest-info-part3-info,
+.quests:hover .quest-info .quest-info-part2 .quest-info-part4-info,
+.quests:hover .quest-info .quest-info-part3 .quest-info-part2-info,
+.quests:hover .quest-info .quest-info-part3 .quest-info-part3-info,
+.quests:hover .quest-info .quest-info-part3 .quest-info-part4-info,
+.quests:hover .quest-info .quest-info-part4 .quest-info-part2-info,
+.quests:hover .quest-info .quest-info-part4 .quest-info-part3-info,
+.quests:hover .quest-info .quest-info-part4 .quest-info-part4-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.quests:hover .quest-info .quest-info-part1 .quest-info-part2-info img,
+.quests:hover .quest-info .quest-info-part1 .quest-info-part3-info img,
+.quests:hover .quest-info .quest-info-part1 .quest-info-part4-info img,
+.quests:hover .quest-info .quest-info-part2 .quest-info-part2-info img,
+.quests:hover .quest-info .quest-info-part2 .quest-info-part3-info img,
+.quests:hover .quest-info .quest-info-part2 .quest-info-part4-info img,
+.quests:hover .quest-info .quest-info-part3 .quest-info-part2-info img,
+.quests:hover .quest-info .quest-info-part3 .quest-info-part3-info img,
+.quests:hover .quest-info .quest-info-part3 .quest-info-part4-info img,
+.quests:hover .quest-info .quest-info-part4 .quest-info-part2-info img,
+.quests:hover .quest-info .quest-info-part4 .quest-info-part3-info img,
+.quests:hover .quest-info .quest-info-part4 .quest-info-part4-info img {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0.5 60rem;
+  flex: 1 0.5 60rem;
+}
+
+.quests:hover .quest-info .quest-info-part1 .quest-info-part2-info p,
+.quests:hover .quest-info .quest-info-part1 .quest-info-part3-info p,
+.quests:hover .quest-info .quest-info-part1 .quest-info-part4-info p,
+.quests:hover .quest-info .quest-info-part2 .quest-info-part2-info p,
+.quests:hover .quest-info .quest-info-part2 .quest-info-part3-info p,
+.quests:hover .quest-info .quest-info-part2 .quest-info-part4-info p,
+.quests:hover .quest-info .quest-info-part3 .quest-info-part2-info p,
+.quests:hover .quest-info .quest-info-part3 .quest-info-part3-info p,
+.quests:hover .quest-info .quest-info-part3 .quest-info-part4-info p,
+.quests:hover .quest-info .quest-info-part4 .quest-info-part2-info p,
+.quests:hover .quest-info .quest-info-part4 .quest-info-part3-info p,
+.quests:hover .quest-info .quest-info-part4 .quest-info-part4-info p {
+  font-family: "MavenPro Regular";
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  padding: 0 5rem;
+}
+
+.quests:hover .quest-info .quest-info-part1 h5,
+.quests:hover .quest-info .quest-info-part2 h5,
+.quests:hover .quest-info .quest-info-part3 h5,
+.quests:hover .quest-info .quest-info-part4 h5 {
+  font-family: "MavenPro Medium";
+  font-size: 1.8rem;
+  color: #0da9ef;
+  text-align: center;
+}
+
+.quests .quests-name {
+  border: 0.5rem solid #0da9ef;
+  border-radius: 1.5rem;
+  padding: 1rem 0 1rem 5rem;
+  background: #3d3d3d;
+}
+
+.quests .quests-name h3 {
+  font-family: "MavenPro Medium";
+  font-size: 2rem;
+  color: #fff;
+}
+
+.quests .quests-name img {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  right: 8%;
+}
+
+/* Line-end */
+.line-end-quests {
+  text-align: center;
+}
+
+/* solve it out */
+/*# sourceMappingURL=style.css.map */

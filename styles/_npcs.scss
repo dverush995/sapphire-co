@@ -1,0 +1,70 @@
+/* Logo */
+#logo img {
+    width: 100%;
+    margin: 1.5rem 0;
+    z-index: -1;
+}
+/* Line-start */
+.line-start-npcs {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+/* NPCs */
+.npcs {
+    width: 90%;
+    margin: 3rem 5%;
+    color: #fff;
+    overflow: hidden;
+    
+    h2 {
+        font-family: "MavenPro Medium";
+        font-size: 2.2rem;
+        color: #0DA9EF;
+        text-align: center;
+    }
+
+    .npc-explain {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5rem 0;
+
+        .npc {
+            width: 100%;
+            display: flex;
+            margin: 2rem 0;
+
+            .npc-info {
+                padding: 0 3rem;
+
+                h4 {
+                    font-family: "MavenPro Medium";
+                    font-size: 1.8rem;
+                    color: #0DA9EF;
+                }
+                
+                .main-p {
+                    font-family: "MavenPro Regular";
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    padding: 2rem 0;
+                }
+                
+                .green-text {
+                    font-family: "MavenPro Medium";
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    color: rgb(46, 206, 46);
+                    padding: 0.5rem 0;
+                }
+            }
+        }
+    }
+}
+/* Line-end */
+.line-end-npcs {
+    margin-top: -5rem;
+    text-align: center;
+}

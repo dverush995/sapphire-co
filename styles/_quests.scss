@@ -1,0 +1,168 @@
+/* Logo */
+#logo img {
+    width: 100%;
+    margin: 1.5rem 0;
+    z-index: -1;
+}
+/* Line-start */
+.line-start-quests {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+/* Quests */
+.info-updates {
+    h2 {
+        font-family: "MavenPro Medium";
+        font-size: 2.2rem;
+        color: #0DA9EF;
+        text-align: center;
+        margin: 3rem 0;
+    }
+}
+.quests {
+    width: 90%;
+    margin: 3rem 5%;
+
+    .quest-info {
+        display: none;
+    }
+
+    &:hover {
+        border: 0.5rem solid #0DA9EF;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-collapse: collapse;
+
+        .quest-info {
+            width: 100%;
+            margin: 1rem 0;
+            padding: 0 5rem;
+            display: inline-block;
+                
+        .quest-info-start {
+                
+            h5 {
+                font-family: "MavenPro Medium";
+                font-size: 1.8rem;
+                color: #0DA9EF;
+                padding: 1rem 0;
+                }
+                
+            p {
+                font-family: "MavenPro Regular";
+                font-size: 1.6rem;
+                color: #fff;
+                padding: 1rem 0;
+                }
+                
+            ul {
+                padding: 0 1rem;
+                color: #fff;
+                
+                li {
+                    font-family: "MavenPro Regular";
+                    font-size: 1.4rem;
+                    padding: 0.5rem 1rem;
+                    }
+                
+                li::before {
+                    content: "—";
+                    left: 8.2%;
+                    position: absolute;
+                            }
+                }
+                            }
+                
+        .quest-info-part1,
+        .quest-info-part2,
+        .quest-info-part3,
+        .quest-info-part4 {
+                
+            ul {
+                padding: 0 1rem;
+                color: #fff;
+                
+                li {
+                    font-family: "MavenPro Regular";
+                    font-size: 1.4rem;
+                    padding: 0.5rem 1rem;
+                    }
+                
+                li::before {
+                    content: "—";
+                    left: 8.2%;
+                    position: absolute;
+                            }
+                }
+                            
+            .img-part-1,
+            .img-part-2,
+            .img-part-3,
+            .img-part-4 {
+                width: 15rem;
+                height: 5rem;
+                position: relative;
+                top: 0;
+                left: 45%;
+                margin: 3rem 0;
+                        }
+                
+            .quest-info-part2-info,
+            .quest-info-part3-info,
+            .quest-info-part4-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                margin: 3rem 0;
+                width: 100%;
+                        
+                img {
+                    flex: 1 0.5 60rem;
+                    }
+                
+                p {
+                    font-family: "MavenPro Regular";
+                    font-size: 1.6rem;
+                    color: #fff;
+                    text-align: center;
+                    padding: 0 5rem;
+                    }
+                                    }
+                
+            h5 {
+                font-family: "MavenPro Medium";
+                font-size: 1.8rem;
+                color: #0DA9EF;
+                text-align: center;
+                }
+                            }
+                    }
+            }  
+     
+    .quests-name {
+        border: 0.5rem solid #0DA9EF;
+        border-radius: 1.5rem;
+        padding: 1rem 0 1rem 5rem;
+        background: #3D3D3D;
+
+        h3 {
+            font-family: "MavenPro Medium";
+            font-size: 2rem;
+            color: #fff;
+        }
+         
+        img {
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            right: 8%;
+        }
+    }
+}
+/* Line-end */
+.line-end-quests {
+    text-align: center;
+}
+
+/* solve it out */

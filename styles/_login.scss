@@ -1,0 +1,67 @@
+/* Logo */
+#logo img {
+    width: 100%;
+    margin: 1.5rem 0;
+    z-index: -1;
+}
+/* Line-start */
+.line-start-lo {
+    text-align: center;
+    margin: 1.5rem;
+}
+/* Register form */
+.register {
+    width: 100%;
+    min-height: 10vh;
+    margin: 4rem 0;
+    overflow: hidden;
+
+    h2 {
+        font-family: "MavenPro Medium";
+        font-size: 2.2rem;
+        color: #0DA9EF;
+        text-align: center;
+    }
+
+    .register-form {
+        width: 100%;
+        margin: 7rem 18%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .register-inputs {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-bottom: 3.5rem;
+            width: 100vh;
+
+            .slc {
+                color: #707070;
+                overflow: hidden;
+            }
+        }
+
+        .btn-register {
+            position: relative;
+            top: 0;
+            left: 58%;
+            width: 25rem;
+            height: 5rem;
+            border: 0.2rem solid #707070;
+            border-radius: 5rem;
+            font-family: "MavenPro Medium";
+            font-size: 2.1rem;
+            background: linear-gradient(90deg, #075578 0%, #0c0c0c 65%);
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
+/* Line-end */
+.line-end-lo {
+    text-align: center;
+    margin-top: -5rem;
+}
